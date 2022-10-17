@@ -1,10 +1,13 @@
 import random
+import string
 
-digits = '0123456789'
-lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'
-uppercase_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-punctuation = '!#$%&*+-=?@^_'
+#digits = '0123456789'
+digits = string.digits
+lowercase_letters = string.ascii_lowercase
+uppercase_letters = string.ascii_uppercase
+punctuation = string.punctuation
 chars = ''
+
 
 count_of_passwords = input('Укажите количество паролей для генерации:  ')
 length_of_password = input('Укажите длину одного пароля:   ')
